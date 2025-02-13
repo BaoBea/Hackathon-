@@ -1,4 +1,4 @@
-from flask import Flask, session, render_template, redirect, request
+from flask import Flask, session, render_template, redirect, request, send_from_directory
 from json import JSONEncoder, JSONDecoder, JSONDecodeError
 app = Flask(__name__)
 app.template_folder = 'websiteGGG'
@@ -7,17 +7,10 @@ app.template_folder = 'websiteGGG'
 def homepage():
     return render_template('HomePage.html')
 
-@app.route('/image/<path>')
-def imagepath(path):
+@app.route('/files/<path>')
+def downloadfile(path):
     print(path)
-    # Open the file in read mode
-    file = open('websiteGGG/'+path, "r")
-    # Read the entire content of the file
-    content = file.read()
-    # Print the content
-    # Close the file
-    file.close()
-    return file
+    return send_from_directory('static', path)
 
 if __name__ == '__main__':
     app.run(debug=True)
