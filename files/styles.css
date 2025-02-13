@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="search"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.main-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.aqi-level {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.aqi-value {
+    color: red;
+}
+
+.forecast {
+    margin-top: 20px;
+}
+
+.forecast-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.day {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+}

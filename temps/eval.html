@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality App</title>
+    <link rel="stylesheet" href="/files/style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>AirVisual</h1>
+            <form>
+                <input type="text" id="search" name="search" placeholder="Search city...">
+                <input type="submit" value="Submit">
+            </form>
+        </header>
+        
+        <section class="main-info">
+            <h2>Shanghai, China</h2>
+            <p class="aqi-level">AQI: <span class="aqi-value">162</span> (Unhealthy)</p>
+            <p class="temperature">Temp: 26°C</p>
+            <p class="wind-speed">Wind: 4.5 km/h</p>
+        </section>
+
+        <section class="forecast">
+            <h3>Weekly Forecast</h3>
+            <div class="forecast-grid">
+                <div class="day">
+                    <p>Monday</p>
+                    <p class="aqi">AQI: 120</p>
+                </div>
+                <div class="day">
+                    <p>Tuesday</p>
+                    <p class="aqi">AQI: 135</p>
+                </div>
+                <div class="day">
+                    <p>Wednesday</p>
+                    <p class="aqi">AQI: 80</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
